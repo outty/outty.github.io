@@ -2,40 +2,45 @@
 
 <head>
     <meta charset="utf-8">
-    <title>ot page</title>
+    <title>apprendre le japonais</title>
     <style>
         footer {
             text-align: center;
-            position: relative;
-            position: absolute;
-            bottom: 0;
+            position: fixed;
+            bottom: 0px;
+            font-size: 10px;
+            
+            
+
         }
 
         .par {
-            font-size: 30px;
+            font-size: 20px;
             font-style: initial;
-
+           
         }
+
+
 
         body {
             background-image: url(kanji\ \(1\).png);
-            background-size: 720px auto;
+            background-size:300px;
             background-position: right;
             background-repeat: no-repeat;
         }
 
-        .header {
-            font-size: 20px;
+        .header{
+            font-size: 15px;
             font-style: bold;
-
-            color: rgba(204, 19, 19, 0.822);
-            border: 2px solid blue;
+            border:3px;
+            border-style:outset ;
+            text-shadow: 2px 2px 4px black;
             border-radius: 5px;
             padding: 5px;
-            text-align: left;
             text-transform: uppercase;
             width: fit-content;
-
+            text-align: center;
+            margin: 0 auto;
         }
 
         a {
@@ -43,20 +48,50 @@
             font-size: 30px;
             text-decoration: none;
         }
+
+        a:visited{
+            color:red;
+        }
+
+         a:hover{
+            color:rgb(23, 97, 167);
+            cursor: pointer;
+        }
+
+        ul.sommaire{
+           text-align:center; 
+           font-size: 15px;
+           font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+           list-style:none ;
+         
+           
+           
+          
+        }
+        img.bg2{
+            width: 160px;
+            height: 220px; 
+            position: relative;
+            margin-top: 1px;
+        }
+        
     </style>
 </head>
 
 <body>
     <h1 class="header"> si vous voulez apprendre le japonais, vous êtes au bon endroit</h1>
-    <ul>
-        <p class="par">tableau des matière:</p>
-        <li><a href="grammaire.html">grammaire japonais</a></li>
-        <li><a href="L'écriture japonaise.html">ecriture japonais</a></li>
-        <li><a href="nombres.html">nombre en japonais</a></li>
+    <ul class="sommaire">
+        <img class="bg2" src="risingsun.jpg" >
+        <p class="par">tableau des matières:</p>
+        <li><a href="grammaire.html">⇨grammaire japonais</a></li>
+        <li><a href="L'écriture japonaise.html">⇨ecriture japonais</a></li>
+        <li><a href="nombres.html">⇨nombre en japonais</a></li>
+        <li><a href="quiz.html">⇨test de bagage</a></li>
     </ul>
 </body>
 <footer>
-    <p>© 2020-2021 oudahmane othmane </p>
+   <p> note : les éléments de la liste au milieu est clickable</p>
+    <p>© 2021-2022 oudahmane othmane </p>
 </footer>
 
 </html>

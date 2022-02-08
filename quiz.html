@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>test de bagage</title>
+  <style>
+    h1 {
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-weight: bolder;
+      text-transform: uppercase;
+    }
+
+    img{
+      height: 300px; 
+      width: 270px;
+      margin-right: auto;
+      margin-left: 30%;
+      float:right;
+    }
+    h2 {
+      color: rgb(42, 105, 12)
+    }
+
+    p>span {
+      font-weight: bolder;
+      font-size: 18px;
+    }
+    body{
+      background-color:#e5e9f0;
+    }
+    footer{
+      text-align: center;
+    }
+  </style>
+
+</head>
+
+<body>
+  <script type="text/javascript">
+    function test1() {
+     if(document.getElementById('q1').value == "votre choix"){document.getElementById("result1").innerHTML = "vous avais pas choisi"}
+      else if (document.getElementById('q1').value == "chi") { document.getElementById("result1").innerHTML = "bravo c'est juste" }
+      else
+        document.getElementById("result1").innerHTML = "mauvaise réponse"
+    }
+    
+    function test2() {
+      if(document.getElementById('q2').value == "votre choix"){document.getElementById("result2").innerHTML = "vous avais pas choisi"}
+      else if (document.getElementById('q2').value == "3") { document.getElementById("result2").innerHTML = "bravo c'est juste" }
+      else
+        document.getElementById("result2").innerHTML = "mauvaise réponse"
+    }
+   
+    function test3() {
+      if(document.getElementById('q3').value == "votre choix"){document.getElementById("result3").innerHTML = "vous avais pas choisi"}
+      else if (document.getElementById('q3').value == "femme informel") { document.getElementById("result3").innerHTML = "bravo c'est juste" }
+      else
+        document.getElementById("result3").innerHTML = "mauvaise réponse"
+    }
+
+    function test4() {
+      if(document.getElementById('q4').value == "votre choix"){document.getElementById("result4").innerHTML = "vous avais pas choisi"}
+      else if (document.getElementById('q4').value == "za") { document.getElementById("result4").innerHTML = "bravo c'est juste" }
+      else
+        document.getElementById("result4").innerHTML = "mauvaise réponse"
+    }
+
+    function test5() {
+      if(document.getElementById('q5').value == "votre choix"){document.getElementById("result5").innerHTML = "vous avais pas choisi"}
+      else if (document.getElementById('q5').value == "arigato") { document.getElementById("result5").innerHTML = "bravo c'est juste" }
+      else
+        document.getElementById("result5").innerHTML = "mauvaise réponse"
+    }
+  </script>
+
+
+
+
+
+  <h1>dans cette page tu peux tester ton bagage on langue japonais </h1>
+  <img src="thinking.jpg" >
+  <h2>question1</h2>
+  <p>comment prononce-t-on le caractère de Hiragana suivant"<span>ち</span>"</p>
+  <form>
+    <label for="choisi la bonne réponse">choisi la bonne réponse</label> <select value="choisi la bonne réponse"
+      id="q1">
+      <option value="votre choix">votre choix</option>
+      <option value="ke">ke</option>
+      <option value="o">o</option>
+      <option value="chi">chi</option>
+    </select>
+    <input type="button" value="tester" onclick="test1()">
+  </form>
+  
+<p id="result1"></p>
+
+  <h2>question2</h2> 
+  <p>c'est quel numéro "<span>さん (san)</span>"</p>
+  <form>
+    <label for="choisi la bonne réponse">choisi la bonne réponse</label> 
+    <select type="radio"value="choisi la bonne réponse"id="q2">
+      <option value="votre choix">votre choix</option>
+      <option value="1">1</option>
+      <option value="3">3</option>
+      <option value="9">9</option>
+    </select>
+    <input type="button" value="tester" onclick="test2()">
+  </form>
+  <p id="result2"></p>
+  <h2>question3</h2>
+
+  <p>la formalité et le genre pour le je en japonais"<span>あたし(atashi)</span>"</p>
+  <form>
+    <label for="choisi la bonne réponse">choisi la bonne réponse</label> <select value="choisi la bonne réponse"
+      id="q3">
+      <option value="votre choix">votre choix</option>
+      <option value="homme formel">homme formel</option>
+      <option value="femme informel">femme informel</option>
+      <option value="homme très informel">homme très informel</option>
+    </select>
+    <input type="button" value="tester" onclick="test3()">
+  </form>
+  <p id="result3"></p>
+
+  <h2>question4</h2>
+
+  <p>comment prononce-t-on le caractère de katakana suivant"<span>ザ</span>"</p>
+  <form>
+    <label for="choisi la bonne réponse">choisi la bonne réponse</label> <select value="choisi la bonne réponse"
+      id="q4">
+      <option value="votre choix">votre choix</option>
+      <option value="za">za</option>
+      <option value="do">do</option>
+      <option value="po">po</option>
+    </select>
+    <input type="button" value="tester" onclick="test4()">
+  </form>
+
+  <p id="result4"></p>
+
+  <h2>question5</h2>
+  <p>comment dire merci en japonais avec romaji </p>
+  <form>
+    <label for="choisi la bonne réponse">choisi la bonne réponse</label> <select value="choisi la bonne réponse"
+      id="q5">
+      <option value="votre choix">votre choix</option>
+      <option value="konishiwa">konishiwa</option>
+      <option value="oyasumi">oyasumi</option>
+      <option value="arigato">arigato</option>
+    </select>
+    <input type="button" value="tester" onclick="test5()">
+
+  <p id="result5"></p>
+  <br>
+
+ 
+  <input type="button" onclick="location.replace('index.html')"  value="page d'accueil">
+</body>
+ <footer>
+    <p>© 2021-2022 oudahmane othmane </p>
+</footer>
+
+</html>
