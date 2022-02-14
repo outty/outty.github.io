@@ -8,8 +8,27 @@
       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
       font-weight: bolder;
       text-transform: uppercase;
+      padding-top :11px ;
+      font-size:30px;
     }
-
+    hr{
+    border-top: 2px groove;
+    width:screen;
+    }
+    
+    nav{
+     width: screen;
+     height:10%;
+     flex: content;
+     align-content: center;
+     justify-content:center;
+     text-align: center;
+     box-shadow: 2px; 
+    }
+    div{
+      height: 20px;
+      width:screen;
+    }
     img{
       height: 300px; 
       width: 270px;
@@ -18,7 +37,15 @@
       float:right;
     }
     h2 {
-      color: rgb(42, 105, 12)
+       
+      color: rgb(26, 98, 212);
+      border: 2px rgb(25, 110, 17);
+      border-style:ridge ; 
+      border-width: thick;
+      width:fit-content;
+      border-radius: 40px;
+      padding:3px;
+      background-color: rgb(224, 64, 131);
     }
 
     p>span {
@@ -37,48 +64,26 @@
 
 <body>
   <script type="text/javascript">
-    function test1() {
-     if(document.getElementById('q1').value == "votre choix"){document.getElementById("result1").innerHTML = "vous avais pas choisi"}
-      else if (document.getElementById('q1').value == "chi") { document.getElementById("result1").innerHTML = "bravo c'est juste" }
+    var identifier,bingo,result;
+    function test(identifier,bingo,result) { 
+      if(document.getElementById(identifier).value == "votre choix"){document.getElementById(result).innerHTML = "vous avais pas choisi"}
+      else if (document.getElementById(identifier).value == bingo) { document.getElementById(result).innerHTML = "bravo c'est juste" }
       else
         document.getElementById("result1").innerHTML = "mauvaise réponse"
     }
     
-    function test2() {
-      if(document.getElementById('q2').value == "votre choix"){document.getElementById("result2").innerHTML = "vous avais pas choisi"}
-      else if (document.getElementById('q2').value == "3") { document.getElementById("result2").innerHTML = "bravo c'est juste" }
-      else
-        document.getElementById("result2").innerHTML = "mauvaise réponse"
-    }
-   
-    function test3() {
-      if(document.getElementById('q3').value == "votre choix"){document.getElementById("result3").innerHTML = "vous avais pas choisi"}
-      else if (document.getElementById('q3').value == "femme informel") { document.getElementById("result3").innerHTML = "bravo c'est juste" }
-      else
-        document.getElementById("result3").innerHTML = "mauvaise réponse"
-    }
-
-    function test4() {
-      if(document.getElementById('q4').value == "votre choix"){document.getElementById("result4").innerHTML = "vous avais pas choisi"}
-      else if (document.getElementById('q4').value == "za") { document.getElementById("result4").innerHTML = "bravo c'est juste" }
-      else
-        document.getElementById("result4").innerHTML = "mauvaise réponse"
-    }
-
-    function test5() {
-      if(document.getElementById('q5').value == "votre choix"){document.getElementById("result5").innerHTML = "vous avais pas choisi"}
-      else if (document.getElementById('q5').value == "arigato") { document.getElementById("result5").innerHTML = "bravo c'est juste" }
-      else
-        document.getElementById("result5").innerHTML = "mauvaise réponse"
-    }
   </script>
 
 
 
 
 
-  <h1>dans cette page tu peux tester ton bagage on langue japonais </h1>
-  <img src="thinking.png" >
+<nav>
+        <h1>dans cette page tu peux tester ton bagage on langue japonais </h1>
+</nav> 
+<div> </div> 
+<hr>
+<img src="thinking.jpg" >
   <h2>question1</h2>
   <p>comment prononce-t-on le caractère de Hiragana suivant"<span>ち</span>"</p>
   <form>
@@ -89,7 +94,7 @@
       <option value="o">o</option>
       <option value="chi">chi</option>
     </select>
-    <input type="button" value="tester" onclick="test1()">
+    <input type="button" value="tester" onclick="test('q1','chi','result1')">
   </form>
   
 <p id="result1"></p>
@@ -104,7 +109,7 @@
       <option value="3">3</option>
       <option value="9">9</option>
     </select>
-    <input type="button" value="tester" onclick="test2()">
+    <input type="button" value="tester" onclick="test('q2','3','result2')">
   </form>
   <p id="result2"></p>
   <h2>question3</h2>
@@ -118,7 +123,7 @@
       <option value="femme informel">femme informel</option>
       <option value="homme très informel">homme très informel</option>
     </select>
-    <input type="button" value="tester" onclick="test3()">
+    <input type="button" value="tester" onclick="test('q3','femme informel','result3')">
   </form>
   <p id="result3"></p>
 
@@ -133,7 +138,7 @@
       <option value="do">do</option>
       <option value="po">po</option>
     </select>
-    <input type="button" value="tester" onclick="test4()">
+    <input type="button" value="tester" onclick="test('q4','za','result4')">
   </form>
 
   <p id="result4"></p>
@@ -148,7 +153,7 @@
       <option value="oyasumi">oyasumi</option>
       <option value="arigato">arigato</option>
     </select>
-    <input type="button" value="tester" onclick="test5()">
+    <input type="button" value="tester" onclick="test('q5','arigato','result5')">
 
   <p id="result5"></p>
   <br>
